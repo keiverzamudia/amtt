@@ -58,6 +58,8 @@ nav ul li a:hover {
     color: #f0a500;
 }
 
+
+
 /*Sud Menu */
 .submenu {
     display: none;
@@ -497,4 +499,58 @@ h4{
     text-align: center;
     color: #000000;
     margin: auto;
+}
+
+/* Código general */
+
+/* Ajustes responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    header .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        height: 70vh;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logos-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+}
+
+/* Ajustes responsive para pantallas medianas a grandes */
+@media (min-width: 769px) {
+    header .container {
+        width: 90%;
+    }
 }
