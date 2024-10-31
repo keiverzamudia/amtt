@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Noticias - AMTT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+           <!-- Pantalla de carga Semaforo -->
+   <div id="loader">
+    <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+    </div>
+</div>
+
+    <!-- Encabezado con menú de navegación -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="scr/logo-venezuela.png" alt="Gobierno Bolivariano de Venezuela">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li>
+                        <a href="requisito.html" class="submenu-toggle">Requisitos</a>
+                    <ul class="submenu">
+                        <li><a href="#requisito-vendimia">Para (VENDIMIA)</a></li>
+                        <li><a href="#requisito-paradas">Para (PARADA PUBLICITARIA)</a></li>
+                        <li><a href="#requisito-evento">Para (EVENTO CULTURAL U OTROS)</a></li>
+                        <li><a href="#requisito-obras">Para (OBRAS Y REPARACION)</a></li>
+                    </li>
+                    </ul>
+                    <li>
+                        <a href="noticias.html" class="submenu-toggle">Noticias</a>
+                        <ul class="submenu">
+                            <li><a href="noticia-1.html">Noticia 1</a></li>
+                            <li><a href="#">Noticia 2</a></li>
+                            <li><a href="#">Noticia 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="Ayuda.html">Ayuda</a></li>
+                </ul>
+            </nav>
+            <div class="logo-amtt">
+                <img src="scr/logo-amtt.jpg" alt="AMTT">
+            </div>
+        </div>
+    </header>
+
+    <div class="news-container">
+        <div class="carousel">
+            <input type="radio" name="carousel" id="slide1" checked>
+            <input type="radio" name="carousel" id="slide2">
+            <input type="radio" name="carousel" id="slide3">
+    
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <img src="scr/noticia1.jpg" alt="Noticia 1">
+                    <p>Título de la Noticia 1</p>
+                    <a href="noticia-1.html" class="btn">Mas información</a>
+
+                </div>
+                <div class="carousel-slide">
+                    <img src="scr/noticia2.jpg" alt="Noticia 2">
+                    <p>Título de la Noticia 2</p>
+                </div>
+                <div class="carousel-slide">
+                    <img src="scr/noticia3.jpg" alt="Noticia 3">
+                    <p>Título de la Noticia 3</p>
+                    <a href="#mas-informacion" class="btn">Noticia 3</a>
+                    
+                </div>
+            </div>
+    
+            <div class="carousel-nav">
+                <!-- Botón para retroceder -->
+                <label for="slide3" class="prev" id="prev1">←</label>
+                <label for="slide1" class="prev" id="prev2">←</label>
+                <label for="slide2" class="prev" id="prev3">←</label>
+                
+                <!-- Botón para avanzar -->
+                <label for="slide2" class="next" id="next1">→</label>
+                <label for="slide3" class="next" id="next2">→</label>
+                <label for="slide1" class="next" id="next3">→</label>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Autoridad Metropolitana de Transporte y Tránsito. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        
+
+        window.addEventListener('load', function() {
+            // Añade un retraso de 3 segundos antes de ocultar el semáforo
+            setTimeout(function() {
+                document.body.classList.add('loaded');
+            }, 2000); // 3 segundos de retraso para que el semáforo se vea completamente
+        });
+    </script>
+
+</body>
+</html>
